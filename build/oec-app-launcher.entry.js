@@ -1,4 +1,4 @@
-import { h, r as registerInstance, e as createEvent, f as Host } from './index-35f2b048.js';
+import { h, r as registerInstance, e as createEvent, f as Host } from './index-c5f39227.js';
 import { R as ReplaySubject, j as from, t as takeUntil } from './index-c55aa8a2.js';
 import './index-f1c6839d.js';
 import { O as Overlay } from './Overlay-f62950a4.js';
@@ -3971,7 +3971,7 @@ const ALLOWED_APPS = [
   /* -------------- */
   {
     name: 'CollisionLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/CollisionLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/CollisionLink`,
     marketingUrl: `https://www.oeconnection.com?query=CollisionLink`,
     description: 'Collision Ordering',
     isOpsProduct: false,
@@ -3979,7 +3979,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'RepairLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/RepairLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/RepairLink`,
     marketingUrl: `https://www.oeconnection.com?query=RepairLink`,
     description: 'Mechanical Ordering',
     isOpsProduct: false,
@@ -3987,7 +3987,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'D2DLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/D2DLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/D2DLink`,
     marketingUrl: `https://www.oeconnection.com?query=D2DLink`,
     description: 'Parts Inventory',
     isOpsProduct: false,
@@ -3995,7 +3995,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'D2DExpress',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/D2DExpress`,
+    landingUrl: `https://portal.oeconnection.com/#!/D2DExpress`,
     marketingUrl: `https://www.oeconnection.com?query=D2DExpress`,
     description: 'Parts Inventory',
     isOpsProduct: false,
@@ -4003,7 +4003,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'MyPriceLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/MyPriceLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/MyPriceLink`,
     marketingUrl: `https://www.oeconnection.com?query=MyPriceLink`,
     description: 'OEM Realtime Pricing',
     isOpsProduct: false,
@@ -4011,7 +4011,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'LinkIQ',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/LinkIQ`,
+    landingUrl: `https://portal.oeconnection.com/#!/LinkIQ`,
     marketingUrl: `https://www.oeconnection.com?query=LinkIQ`,
     description: 'Performance Monitoring',
     isOpsProduct: false,
@@ -4019,7 +4019,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'EPCLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/EPCLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/EPCLink`,
     marketingUrl: `https://www.oeconnection.com?query=EPCLink`,
     description: 'Parts Catalog',
     isOpsProduct: false,
@@ -4027,7 +4027,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'ConsumerLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/ConsumerLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/ConsumerLink`,
     marketingUrl: `https://www.oeconnection.com?query=ConsumerLink`,
     description: 'Parts Marketing',
     isOpsProduct: false,
@@ -4035,7 +4035,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'Marketplace Direct',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/MarketplaceDirect`,
+    landingUrl: `https://portal.oeconnection.com/#!/MarketplaceDirect`,
     marketingUrl: `https://www.oeconnection.com?query=MarketplaceDirect`,
     description: 'EBAY Sales Channel',
     isOpsProduct: false,
@@ -4043,7 +4043,7 @@ const ALLOWED_APPS = [
   },
   {
     name: 'FakeLink',
-    landingUrl: `https://portal.oecdev.oeconnection.com/#!/FakeLink`,
+    landingUrl: `https://portal.oeconnection.com/#!/FakeLink`,
     marketingUrl: `https://www.oeconnection.com?query=FakeLink`,
     description: 'FakeLink',
     isOpsProduct: false,
@@ -4092,7 +4092,7 @@ const OecAppLauncher = class {
       "EPCLink",
       "ConsumerLink"
     ];
-    this.destroy$ = new ReplaySubject();
+    this.destroy$ = new ReplaySubject(1);
     this.viewAllVisible = false;
     this.hasOps = false;
     this.hasOec = false;

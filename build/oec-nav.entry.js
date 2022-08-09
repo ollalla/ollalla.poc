@@ -1,8 +1,8 @@
-import { h, r as registerInstance, e as createEvent, f as Host } from './index-35f2b048.js';
+import { h, r as registerInstance, e as createEvent, f as Host } from './index-c5f39227.js';
 import { S as Subject, R as ReplaySubject, m as merge, a as map, s as switchMap, o as of, d as delay, b as distinctUntilChanged, t as takeUntil, i as interval, c as shareReplay, e as scan } from './index-c55aa8a2.js';
 import './index-f1c6839d.js';
-import './oec-nav-menu-action-46574816.js';
-import './oec-user-icon-6b636440.js';
+import './oec-nav-menu-action-74c2a7f8.js';
+import './oec-user-icon-a28e9d8f.js';
 import { O as Overlay } from './Overlay-f62950a4.js';
 
 const MyIconBellSolid = (attrs) => (h("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 448 512", fill: "currentColor" }, attrs),
