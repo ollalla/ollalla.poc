@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0;
+  background-color: white;
+  color: #003b71;
+}
+:host .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+:host .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+:host .vertical-divider {
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: black;
+  opacity: 0.1;
+}
+:host oec-nav-search {
+  --oec-nav-search-padding-right: 0rem;
+  margin-right: -8px;
+}
+:host .help, :host .notifications, :host .messages, :host oec-nav-search, :host .user-info {
+  width: 20px;
+  height: 30px;
+}
+:host .bento {
+  --oec-nav-menu-action-padding-left: 1rem;
+  height: 30px;
+}
+:host .bento-content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+:host .bento-content svg:first-child {
+  height: 30px;
+  width: 60px;
+}
+:host .bento-content svg:last-child {
+  margin-left: 10px;
+}

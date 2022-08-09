@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  font-family: var(--app-font-family);
+  color: #000;
+}
+:host * {
+  box-sizing: border-box;
+}
+:host .hidden {
+  display: none;
+}
+:host .launcher-component {
+  max-width: 430px;
+  min-width: min-content;
+  box-shadow: 1px 1px 4px rgba(119, 136, 153, 0.4);
+  background-color: #fff;
+  border-radius: 3px;
+}
+:host .launcher-component.one-column {
+  width: 209px;
+}
+:host .launcher-component .headWrapper {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  padding-top: 3px;
+}
+:host .launcher-component .headWrapper header {
+  text-align: center;
+  width: 50%;
+  min-width: min-content;
+  padding: 3px;
+  vertical-align: middle;
+}
+:host .launcher-component .headWrapper header.one-column {
+  width: 100%;
+}
+:host .launcher-component .appsWrapper {
+  display: flex;
+  font-size: 12px;
+  padding: 6px 0;
+  height: 370px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+:host .launcher-component .appsWrapper::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+:host .launcher-component .appsWrapper::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+:host .launcher-component .appsWrapper::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 6px;
+}
+:host .launcher-component .appsWrapper:hover::-webkit-scrollbar-thumb {
+  background: #cecece;
+}
+:host .launcher-component .appsWrapper .products-column {
+  width: 209px;
+  min-width: min-content;
+}
+:host .launcher-component .view-all {
+  width: 100%;
+  border-top: 1px solid #cecece;
+  font-size: 13.5px;
+  padding: 6px 0;
+  color: #00507d;
+  text-align: center;
+}
+:host .launcher-component .view-all:hover {
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
