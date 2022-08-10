@@ -30,6 +30,7 @@
     .flex {
       display: flex;
       gap: 30px;
+
     }
 
     :is(pre, .launcher-wrapper) {
@@ -41,7 +42,8 @@
 
     }
 
-    pre {
+    pre,
+    code {
       padding: 20px;
       margin: 0;
       color: crimson
@@ -83,21 +85,36 @@
 &lt;div class="launcher-wrapper">
   &lt;oec-app-launcher>&lt;/oec-app-launcher>
 &lt;/div>
+
+<code><b>enabledApps</b> = ["OPSTrax", "DeliveryTrax", "ValuTrax", 
+  "BackTrax", "CollisionLink", "RepairLink", "D2DLink", 
+  "D2DExpress", "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink"]</code>
 </pre>
   </div>
 
   <h3 id="s1">Scenario 1. Generic. A user subscribed to up to 9 OEC and up to 9 OPS products</h3>
-  <div class="over-wrapper">
-    <oec-app-launcher id="launcher01"></oec-app-launcher>
+  <div class="flex">
+    <div class="over-wrapper">
+      <oec-app-launcher id="launcher01"></oec-app-launcher>
+    </div>
+    <code><b>enabledApps</b> = ['OPSTrax', 'DeliveryTrax', 'ValuTrax', 'CollisionLink', 'D2DLink', 'LinkIQ', 'MyPriceLink',
+      'EPCLink']</code>
   </div>
 
   <h3 id="s2">Scenario 2. Scroll bar. A user subscribed for more than 9 of one of the product types</h3>
-  <div class="over-wrapper">
-    <oec-app-launcher id="launcher05"></oec-app-launcher>
+  <div class="flex">
+    <div class="over-wrapper">
+      <oec-app-launcher id="launcher05"></oec-app-launcher>
+    </div>
+    <code><b>enabledApps</b> = ["OPSTrax", "DeliveryTrax", "ValuTrax", "CollisionLink", "RepairLink", "D2DLink", "D2DExpress",
+      "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink", "Marketplace Direct", "FakeLink"]</code>
   </div>
 
   <h3 id="s3">Scenario 3. One column. A user subscribed to only OPS applications</h3>
-  <oec-app-launcher id="launcher02"></oec-app-launcher>
+  <div class="flex">
+    <oec-app-launcher id="launcher02"></oec-app-launcher>
+    <code><b>enabledApps</b> = ["ValuTrax", "OPSTrax", "DeliveryTrax", "BackTrax"]</code>
+  </div>
 
   <h3 id="s4">Scenario 3. One column. A user subscribed to only OEC applications (with the wrapper DIV)</h3>
   <div class="flex">
@@ -107,15 +124,17 @@
     <pre>
     <b class="big">Code:</b>     
     
-    <b>CSS</b>
-    .launcher-wrapper {
-      width: min-content;
-      ...
-    }      
-    <b>HTML</b>
-    &lt;div class="launcher-wrapper">
-      &lt;oec-app-launcher>&lt;/oec-app-launcher>
-    &lt;/div>
+  <b>CSS</b>
+  .launcher-wrapper {
+    width: min-content;
+    ...
+  }      
+  <b>HTML</b>
+  &lt;div class="launcher-wrapper">
+    &lt;oec-app-launcher>&lt;/oec-app-launcher>
+  &lt;/div>
+
+<code><b>enabledApps</b> = ["CollisionLink", "D2DLink", "LinkIQ", "MyPriceLink", "EPCLink"]</code>
     </pre>
   </div>
 
