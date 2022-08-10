@@ -1,0 +1,53 @@
+:root {
+  --font: 'Open Sans', sans-serif;
+  --body-width: 900px;
+  --bg-color: #f6f2f399;
+  --link-color: #05f;
+  --heading-color: lightslategray;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  font-family: var(--font);
+  width: var(--body-width);
+  margin: 0 auto;
+}
+
+a:any-link {
+  color: var(--link-color);
+}
+
+h3 {
+  color: var(--heading-color);
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+:is(pre, .launcher-wrapper) {
+  border: 1px solid #003b71;
+  border-radius: 3px;
+  border-top-width: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+pre,
+code {
+  padding: 20px;
+  margin: 0;
+  color: crimson;
+}
+
+.big {
+  font-size: larger;
+}
+
+:is(.over-wrapper, .launcher-wrapper) {
+  width: min-content;
+}

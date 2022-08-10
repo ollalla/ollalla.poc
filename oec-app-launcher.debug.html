@@ -9,53 +9,7 @@
   <script type="module" src="/build/oec.esm.js"></script>
   <script nomodule src="/build/oec.js"></script>
   <style>
-    body {
-      background-color: rgba(246, 242, 243, 0.6);
-      margin: 0;
-      padding: 20px;
-      font-family: 'Open Sans', sans-serif;
-      width: 900px;
-      margin: 0 auto;
-    }
-
-    a:any-link {
-      color: #05f;
-    }
-
-    h3 {
-      color: lightslategray;
-      margin-top: 3rem;
-    }
-
-    .flex {
-      display: flex;
-      gap: 30px;
-
-    }
-
-    :is(pre, .launcher-wrapper) {
-      border: 1px solid #003B71;
-      border-radius: 3px;
-      border-top-width: 3px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-
-    }
-
-    pre,
-    code {
-      padding: 20px;
-      margin: 0;
-      color: crimson
-    }
-
-    .big {
-      font-size: larger;
-    }
-
-    :is(.over-wrapper, .launcher-wrapper) {
-      width: min-content;
-    }
+    @import url(./style.css);
   </style>
 </head>
 
@@ -106,8 +60,7 @@
     <div class="over-wrapper">
       <oec-app-launcher id="launcher05"></oec-app-launcher>
     </div>
-    <code><b>enabledApps</b> = ["OPSTrax", "DeliveryTrax", "ValuTrax", "CollisionLink", "RepairLink", "D2DLink", "D2DExpress",
-      "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink", "Marketplace Direct", "FakeLink"]</code>
+    <code><b>enabledApps</b> = ["OPSTrax", "DeliveryTrax", "ValuTrax", "CollisionLink", "RepairLink", "D2DLink", "D2DExpress", "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink", "Marketplace Direct", "FakeLink", "TraxPartners", "TraxAR", "SubTrax","BackTrax"]</code>
   </div>
 
   <h3 id="s3">Scenario 3. One column. A user subscribed to only OPS applications</h3>
@@ -153,7 +106,7 @@
 
     /* scenario: has hull house + 10 in a column */
     const launcher5 = document.querySelector('#launcher05');
-    launcher5.enabledApps = ["OPSTrax", "DeliveryTrax", "ValuTrax", "CollisionLink", "RepairLink", "D2DLink", "D2DExpress", "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink", "Marketplace Direct", "FakeLink"]
+    launcher5.enabledApps = ["OPSTrax", "DeliveryTrax", "ValuTrax", "CollisionLink", "RepairLink", "D2DLink", "D2DExpress", "MyPriceLink", "LinkIQ", "EPCLink", "ConsumerLink", "Marketplace Direct", "FakeLink", "TraxPartners", "TraxAR", "SubTrax", "BackTrax"]
 
     /* scenario: has only OEC app */
     const launcher3 = document.querySelector('#launcher03');
